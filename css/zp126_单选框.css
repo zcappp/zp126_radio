@@ -95,12 +95,7 @@ module.exports=`
 }
 
 .zp126.inline {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.zp126.inline .zp126item {
-    flex: 0 0 25%;
+    display: inline-block;
 }
 
 .zp126.block label,
