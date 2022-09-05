@@ -6,7 +6,7 @@ function render(ref) {
     const value = ref.getForm(ref.props.dbf)
     return ref.options.map((o, i) => <span onClick={() => click(ref, o)} className="zp126item" key={o + i}>
         <span className={"zp126box" + (value === o ? " checked" : "")}><i/></span>
-        <label>{ref.labels[i]}</label>
+        <label>{ref.labels ? ref.labels[i] : ""}</label>
     </span>)
 }
 
