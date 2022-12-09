@@ -26,8 +26,6 @@ module.exports=`
 .zp126box i {
     display: block;
     position: relative;
-    top: 0;
-    left: 0;
     width: 16px;
     height: 16px;
     background-color: #fff;
@@ -41,8 +39,6 @@ module.exports=`
 
 .zp126box.checked::after {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     border: 1px solid #1890ff;
@@ -109,8 +105,8 @@ module.exports=`
 }
 
 .zp126item.zcell .zp126box {
+    display: flex;
     order: 2;
-    top: 0;
     margin-right: .5em;
 }
 
