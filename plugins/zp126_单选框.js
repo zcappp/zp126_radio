@@ -28,7 +28,7 @@ function init(ref) {
 
 function click(ref, o) {
     ref.setForm(ref.props.dbf, o)
-    if (ref.props.onChange) ref.exc(ref.props.onChange, { ...ref.ctx, $x: o }, () => ref.exc("render()"))
+    if (ref.props.change) ref.exc(ref.props.change, { ...ref.ctx, $x: o }, () => ref.exc("render()"))
 }
 
 
@@ -54,7 +54,7 @@ $plugin({
         label: "样式",
         items: ["inline", "block", "zcells"]
     }, {
-        prop: "onChange",
+        prop: "change",
         type: "exp",
         label: "onChange表达式"
     }],
