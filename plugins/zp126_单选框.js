@@ -4,6 +4,7 @@ import css from "../css/zp126_单选框.css"
 function render(ref) {
     if (!ref.props.dbf) return <div>请配置表单字段</div>
     const value = ref.getForm(ref.props.dbf)
+    if (!Array.isArray(ref.options)) return <div/>
     return ref.options.map((o, i) => <span onClick={() => click(ref, o)} className="zp126item" key={o + i}>
         <span className={"zp126box" + (value === o ? " checked" : "")}><i/></span>
         <label>{ref.labels ? ref.labels[i] : ""}</label>
