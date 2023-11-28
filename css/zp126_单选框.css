@@ -1,5 +1,4 @@
 module.exports=`
-
 /**/
 
 .zp126item {
@@ -97,6 +96,10 @@ module.exports=`
 .zp126.block label,
 .zp126.inline label {
     padding: 0 8px;
+}
+
+.zp126.zcells {
+    margin-top: 0;
 }
 
 .zp126item.zcell {
