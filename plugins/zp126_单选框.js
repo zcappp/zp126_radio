@@ -29,7 +29,7 @@ function init(ref) {
 
 function click(ref, o) {
     ref.setForm(ref.props.dbf, o)
-    if (ref.props.change) ref.exc(ref.props.change, { ...ref.ctx, $x: o }, () => ref.exc("render()"))
+    if (ref.props.change) ref.exc(ref.props.change, { ...ref.ctx, $val: o }, () => ref.exc("render()"))
 }
 
 
