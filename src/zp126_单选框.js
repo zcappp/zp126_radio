@@ -1,5 +1,5 @@
 import React from "react"
-import css from "../css/zp126_单选框.css"
+import css from "./zp126_单选框.css"
 
 function render(ref) {
     if (!ref.props.dbf) return <div>请配置表单字段</div>
